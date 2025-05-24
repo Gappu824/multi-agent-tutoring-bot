@@ -90,8 +90,11 @@ if __name__ == "__main__":
         tutor = TutorAgent()
         print("\n--- Testing Math Query ---")
         print(f"Tutor Response: {tutor.route_query('Can you help me solve 2x + 5 = 11? And also, what is 10 times 3?')}")
+        # ... (other print statements for testing) ...
         print("\n--- Testing Physics Query ---")
-        print(f"Tutor Response: {tutor.route_query('What is Newton\\'s second law and the value of the gravitational constant G?')}")
+        physics_query_text = "What is Newton's second law and the value of the gravitational constant G?"
+        print(f"Tutor Response: {tutor.route_query(physics_query_text)}")
+        # ... (other print statements for testing) ...
     except Exception as e:
         print(f"Error in TutorAgent test: {e}")
         print("Ensure GEMINI_API_KEY is set in .env")
